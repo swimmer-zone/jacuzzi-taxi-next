@@ -1,0 +1,161 @@
+@import '_variables.css';
+
+html,
+body {
+	margin: 0;
+	font-family: 'Ubuntu';
+	overflow-x: hidden;
+	font-size: 16px;
+}
+h1 {
+    padding: 40px 0 30px;
+    font-size: 3rem;
+	font-weight: 300;
+	margin: 0;
+	letter-spacing: 2px;
+}
+h2 {
+    padding: 48px 0 24px;
+    font-size: 2rem;
+	font-weight: 200;
+	margin: 0;
+	letter-spacing: 1px;
+}
+h3 {
+    padding: 16px 0 12px;
+    font-size: 1.5rem;
+	font-weight: 300;
+	margin: 0;
+	letter-spacing: 1px;
+}
+p {
+	line-height: 2rem;
+	letter-spacing: .8px;
+	color: var(--darkblue);
+	margin: 0 0 1.2rem 0;
+
+	&.error {
+		color: var(--error);
+	}
+}
+
+form {
+	& > div {
+		display: flex;
+		flex-direction: row;
+	}
+	label {
+		display: block;
+		width: 300px;
+		padding: 4px 0;
+		margin: 4px 0;
+	}
+	input,
+	textarea,
+	select {
+		font-family: 'Ubuntu';
+		display: block;
+		width: 400px;
+		padding: 8px;
+		margin: 8px;
+		border: 1px solid var(--blue-transparent);
+		background-color: var(--blue-transparent);
+		border-radius: 8px;
+		transition: 1s all;
+
+		&:focus {
+			outline: none;
+			border: 1px solid var(--blue);
+		}
+	}
+	textarea {
+		height: 240px;
+	}
+	button.primary,
+	button.secondary {
+		display: inline-block;
+		width: 160px;
+		padding: 8px;
+		margin: 8px;
+		border: 1px solid var(--blue);
+		background-color: var(--blue);
+		border-radius: 8px;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: var(--white);
+		transition: 1s background-color;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--darkblue);
+		}
+	}
+	button.secondary {
+		background-color: var(--white);
+		color: var(--blue);
+
+		&:hover {
+			background-color: var(--blue-transparent);
+		}
+	}
+}
+
+section.main {
+	display: block;
+	width: 100vw;
+	margin-top: 20vh;
+	padding: 0;
+	min-height: 84vh;
+
+	.column {
+		width: calc((var(--center-width) / 2) - 40px);
+	}
+}
+
+.inner {
+	width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+    width: 320px;
+
+	.dark {
+		fill: var(--darkblue);
+	}
+	.light {
+		fill: var(--blue);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		padding: 40px 0 30px;
+		font-size: 2rem;
+		font-weight: 300;
+		margin: 0;
+		letter-spacing: 2px;
+	}
+	h2 {
+		padding: 48px 0 24px;
+		font-size: 1.6rem;
+		font-weight: 200;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	h3 {
+		padding: 16px 0 12px;
+		font-size: 1.2rem;
+		font-weight: 300;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+
+	.inner {
+		margin: 0 40px;
+		max-width: 90vw;
+	}
+}

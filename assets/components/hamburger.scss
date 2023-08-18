@@ -1,0 +1,90 @@
+@import '../_variables.css';
+
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 30px;
+	left: 36px;
+	top: 36px;
+}
+
+.bm-burger-bars {
+	background: var(--darkblue);
+}
+.bm-burger-bars-hover {
+	background: var(--blue);
+}
+
+.bm-cross-button {
+	position: fixed !important;
+	width: 36px !important;
+	height: 30px !important;
+	left: 36px !important;
+	top: 36px !important;
+}
+
+.bm-cross {
+	background: #bdc3c7;
+	height: 36px !important;
+}
+
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+	top: 0;
+}
+
+.bm-menu {
+	background: var(--darkblue);
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+	height: auto !important;
+
+	.social {
+		display: inline-block !important;
+		width: 40px !important;
+		height: 40px;
+		margin: 16px;
+		
+		svg {
+			width: 40px;
+			height: 40px;
+
+			path {
+				fill: var(--blue);
+			}
+		}
+	}
+}
+
+.bm-morph-shape svg path {
+	fill: var(--darkblue);
+}
+
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 0.8em 0;
+	margin: 50px 0;
+}
+.bm-item {
+	display: inline-block;
+	color: var(--white);
+	margin: 8px;
+
+	a {
+		text-decoration: none;
+		color: var(--white);
+		line-height: 3rem;
+	}
+}
+
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+	top: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    [class^="bm-"] {
+		display: none;
+	}
+}

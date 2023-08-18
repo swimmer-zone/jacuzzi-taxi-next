@@ -1,0 +1,18 @@
+[
+	{
+		"url": "/",
+		"label": "Home"
+	},
+	{
+		"url": "/products",
+		"label": "Onze Jacuzzi's"
+	},
+	{
+		"url": "/faq",
+		"label": "FAQ"
+	},
+	{
+		"url": "/contact",
+		"label": "Contact"
+	}
+]

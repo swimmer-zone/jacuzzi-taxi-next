@@ -1,0 +1,34 @@
+@import '_variables.css';
+
+.faq {
+	background-color: var(--white);
+	color: var(--blue);
+}
+
+.faq-row-wrapper {
+	.faq-body {
+	}
+	.faq-row {
+		border-bottom: 1px dotted var(--blue) !important;
+	}
+	.row-title {
+	}
+	.row-content {
+		padding: 8px 0;
+	}
+	.row-content-text {
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	section.main {
+		.inner {
+			max-width: 90vw;
+			margin: 0 auto;
+
+			div {
+				max-width: 90vw;
+			}
+		}
+	}
+}

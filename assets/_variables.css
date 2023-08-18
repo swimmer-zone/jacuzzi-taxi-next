@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:light,regular,bold,bolditalic,italic,lightitalic,medium,mediumitalic');
+
+:root {
+	--blue: #3998f4;
+	--blue-transparent: #c7e3fc;
+	--transparent: #c7e3fc00;
+	--darkblue: #0b2e56;
+	--light: #dddddd;
+	--white: #ffffff;
+	--black: #000000;
+	--shadow: #0b2e5644;
+	--error: #ff0000;
+
+	--mobile-breakpoint: 800px;
+
+	--center-width: 1140px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		//
+	}
+}
+
+@media (hover: hover) and (pointer: fine) {
+	//
+}
+
+@media (prefers-reduced-motion) {
+  	.card:hover span {
+    	/* transform: none; */
+  	}
+}

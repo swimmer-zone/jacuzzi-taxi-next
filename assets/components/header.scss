@@ -1,0 +1,22 @@
+@import '../_variables.css';
+
+header {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	padding: 0;
+	z-index: 999;
+
+	.wave {
+		width: 100vw;
+		height: 10vh;
+		transform: rotate(180deg);
+	}
+	.background {
+		background: var(--blue-transparent);
+		width: 100vw;
+		height: 10vh;
+	}
+}

@@ -1,0 +1,31 @@
+@import '_variables.css';
+
+section.main {
+	h1 {
+		color: var(--blue);
+	}
+	img {
+		margin: 130px 0 10px 40px;
+		float: right;
+		filter: drop-shadow(5px 5px 4px rgb(0 0 0 / 0.2));
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	section.main {
+		img {
+			float: none;
+			margin: 40px auto;
+			height: auto;
+			max-width: 90vw;
+		}
+		.inner {
+			max-width: 90vw;
+			margin: 0 auto;
+
+			div {
+				max-width: 90vw;
+			}
+		}
+	}
+}

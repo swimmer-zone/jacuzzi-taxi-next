@@ -1,0 +1,72 @@
+@import '../_variables.css';
+
+footer {
+	display: block;
+	width: 100vw;
+	min-height: 8vh;
+
+	.wave {
+		position: relative;
+		width: 100vw;
+		height: 10vh;
+	}
+	.background {
+		background: var(--blue);
+		width: 100vw;
+		min-height: 8vh;
+		padding: 2vw 0;
+		margin-top: -4px;
+	}
+	.column {
+		margin-bottom: 1.2rem;
+		width: calc((var(--center-width) / 3) - 40px);
+
+		ul {
+			margin-top: 0;
+		}
+		li {
+			line-height: 2rem;
+			letter-spacing: .8px;
+		}
+
+		&:nth-of-type(2) {
+			width: calc((var(--center-width) / 3) * 2);
+		}
+	}
+
+	a {
+		color: var(--darkblue);
+		text-decoration: none;
+		transition: 1s color;
+		border-bottom: 1px dotted var(--darkblue);
+
+		&:hover {
+			color: #0b2e5688;
+		}
+	}
+
+	.social {
+		margin: 8px 24px;
+		border-bottom: none;
+
+		svg {
+			width: 32px;
+			height: 32px;
+
+			path {
+				fill: var(--darkblue);
+				transition: 1s all;
+			}
+		}
+
+		&:hover path {
+			fill: #0b2e5688;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	footer {
+		display: none;
+	}
+}

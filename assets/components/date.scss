@@ -1,0 +1,16 @@
+.rdrDefinedRangesWrapper,
+.rdrMonthAndYearPickers {
+	display: none;
+}
+.picker-container {
+	display: flex;
+}
+.picker-container,
+.rdrCalendarWrapper,
+.rdrDateDisplayWrapper {
+	background-color: #f5fafe;
+	border-radius: 8px;
+}
+.rdrDayDisabled {
+	background-color: #f0f0f0;
+}

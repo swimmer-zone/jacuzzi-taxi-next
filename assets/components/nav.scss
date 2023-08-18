@@ -1,0 +1,57 @@
+@import '../_variables.css';
+
+header nav {
+	height: 100px;
+
+	ul {
+		display: block;
+		list-style: none;
+		height: 100px;
+		padding: 0;
+		margin: 0;
+
+		li {
+			position: relative;
+			z-index: 1;
+			display: inline-block;
+			height: 90px;
+			letter-spacing: .5px;
+			background: linear-gradient(to top, var(--transparent), var(--transparent));
+
+			&:before {
+				position: absolute;
+				content: "";
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: linear-gradient(to top, var(--transparent), var(--blue));
+				opacity: 0;
+				z-index: -1;
+				transition: 1s opacity;
+			}
+			&:hover:before {
+				opacity: 1;
+			}
+			&.active {
+			}
+
+			a {
+				display: block;
+				margin: 0 16px;
+				text-decoration: none;
+				color: var(--darkblue);
+				height: 100px;
+				width: 100%;
+				line-height: 70px;
+				letter-spacing: .8px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	header nav {
+		display: none;
+	}
+}
